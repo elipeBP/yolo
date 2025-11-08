@@ -5,12 +5,28 @@ Este guia vai te ajudar a treinar um modelo YOLOv11 para reconhecer uma peça de
 ## 📋 O que você precisa
 
 1. **Imagens da peça** (mínimo 100, ideal 300+)
-2. **Tempo**: 2-4 horas para coletar e anotar + tempo de treino
-3. **Ferramenta de anotação**: LabelImg (gratuita)
+   - **OPÇÃO RÁPIDA**: Use datasets gratuitos! (veja `DATASETS_GRATUITOS.md`)
+2. **Tempo**: 
+   - Com dataset gratuito: 30min-1h (só treinar)
+   - Coletando você mesmo: 2-4 horas para coletar e anotar + tempo de treino
+3. **Ferramenta de anotação**: LabelImg (gratuita) - só se for coletar suas próprias fotos
 
 ## 🚀 Passo a Passo
 
-### 1. Coletar Imagens
+### 0. 🎯 OPÇÃO RÁPIDA: Usar Dataset Gratuito
+
+**Economize tempo usando datasets já prontos!**
+
+1. Execute: `python baixar_dataset.py`
+2. Ou acesse: https://universe.roboflow.com/ e busque "car parts"
+3. Baixe um dataset público
+4. Pule direto para o passo 4 (Treinar)
+
+**Consulte `DATASETS_GRATUITOS.md` para mais opções!**
+
+---
+
+### 1. Coletar Imagens (Se não usar dataset gratuito)
 
 **Onde conseguir:**
 - Tire fotos da peça em diferentes:
