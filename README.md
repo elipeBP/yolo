@@ -223,6 +223,15 @@ Depois tente ativar novamente.
 - [ ] Webcam conectada e funcionando
 - [ ] Script executado com sucesso (`python main.py`)
 
+## 📤 Enviar para GitHub
+
+Se você quiser salvar este projeto no GitHub, consulte o arquivo `GUIA_GITHUB.md` para instruções detalhadas.
+
+**Método rápido:**
+1. Crie um repositório em: https://github.com/new
+2. Execute o script: `.\enviar_github.ps1`
+3. Siga as instruções na tela
+
 ---
 
 **Desenvolvido para Windows 11** | **Python 3.10+** | **YOLOv11**
