@@ -140,11 +140,16 @@ unisenai_code/
 ├── executar.bat          # Script para executar (Windows - duplo clique)
 ├── executar.ps1          # Script para executar (PowerShell)
 │
+├── treinar.py            # Script para treinar modelo personalizado
+├── preparar_dataset.py   # Script para organizar dataset
+├── usar_modelo_treinado.py # Script para usar modelo treinado
+│
 ├── yolo11n.pt           # Modelo de detecção de objetos
 ├── yolo11n-pose.pt       # Modelo de detecção de pose
 ├── yolo11n-seg.pt        # Modelo de segmentação
 │
 ├── README.md            # Este arquivo (guia completo)
+├── GUIA_TREINAMENTO.md  # Guia completo de treinamento
 └── .gitignore           # Arquivos ignorados pelo Git
 ```
 
@@ -222,6 +227,19 @@ Depois tente ativar novamente.
 - [ ] Dependências instaladas (`pip install -r requirements.txt`)
 - [ ] Webcam conectada e funcionando
 - [ ] Script executado com sucesso (`python main.py`)
+
+## 🎓 Treinar Modelo Personalizado
+
+Quer treinar o sistema para reconhecer uma peça de carro específica? Consulte o **`GUIA_TREINAMENTO.md`** para instruções completas.
+
+**Resumo rápido:**
+1. Colete 100-300+ imagens da peça
+2. Anote com LabelImg (`pip install labelimg` → `labelimg`)
+3. Execute `python preparar_dataset.py` para organizar
+4. Execute `python treinar.py` para treinar
+5. Use `python usar_modelo_treinado.py` para testar
+
+**Tempo estimado para MVP**: 3-6 horas
 
 ---
 
