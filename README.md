@@ -143,13 +143,13 @@ unisenai_code/
 ├── treinar.py            # Script para treinar modelo personalizado
 ├── preparar_dataset.py   # Script para organizar dataset
 ├── usar_modelo_treinado.py # Script para usar modelo treinado
+├── usar_modelo_roboflow.py # Script para usar modelo do Roboflow
 │
 ├── yolo11n.pt           # Modelo de detecção de objetos
 ├── yolo11n-pose.pt       # Modelo de detecção de pose
 ├── yolo11n-seg.pt        # Modelo de segmentação
 │
 ├── README.md            # Este arquivo (guia completo)
-├── GUIA_TREINAMENTO.md  # Guia completo de treinamento
 └── .gitignore           # Arquivos ignorados pelo Git
 ```
 
@@ -230,21 +230,10 @@ Depois tente ativar novamente.
 
 ## 🎓 Treinar Modelo Personalizado
 
-Quer treinar o sistema para reconhecer uma peça de carro específica? Consulte o **`GUIA_TREINAMENTO.md`** para instruções completas.
-
 **Resumo rápido:**
-1. **OPÇÃO RÁPIDA**: Use dataset gratuito (`python baixar_dataset.py`) - 30min-1h
-2. **OU** colete 100-300+ imagens da peça
-3. **OU** anote com LabelImg (`pip install labelimg` → `labelimg`)
-4. Execute `python preparar_dataset.py` para organizar
-5. Execute `python treinar.py` para treinar
-6. Use `python usar_modelo_treinado.py` para testar
-
-**Tempo estimado:**
-- Com dataset gratuito: 30min-1h
-- Coletando você mesmo: 3-6 horas
-
-**Consulte `DATASETS_GRATUITOS.md` para datasets prontos!**
+1. Execute `python preparar_dataset.py` para organizar
+2. Execute `python treinar.py` para treinar
+3. Use `python usar_modelo_treinado.py` para testar
 
 ---
 
