@@ -1,0 +1,7 @@
+path: carparts
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 20
+names: ['Car boot', 'Car hood', 'Driver-s door - -F-R-', 'Fender - -F-L-', 'Fender - -F-R-', 'Fender - -R-L-', 'Fender - -R-R-', 'Front bumper', 'Headlight - -L-', 'Headlight - -R-', 'Passenger-s door - -F-L-', 'Passenger-s door - -R-L-', 'Passenger-s door - -R-R-', 'Rear bumper', 'Rear light - -L-', 'Rear light - -R-', 'Side bumper - -L-', 'Side bumper - -R-', 'Side mirror - -L-', 'Side mirror - -R-']

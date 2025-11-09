@@ -140,14 +140,14 @@ unisenai_code/
 ├── executar.bat          # Script para executar (Windows - duplo clique)
 ├── executar.ps1          # Script para executar (PowerShell)
 │
-├── treinar.py            # Script para treinar modelo personalizado
-├── preparar_dataset.py   # Script para organizar dataset
-├── usar_modelo_treinado.py # Script para usar modelo treinado
-├── usar_modelo_roboflow.py # Script para usar modelo do Roboflow
+├── treinar_carparts.py   # Script para treinar modelo com dataset carparts
+├── verificar_treinamento.py # Script para verificar progresso do treino
 │
 ├── yolo11n.pt           # Modelo de detecção de objetos
 ├── yolo11n-pose.pt       # Modelo de detecção de pose
 ├── yolo11n-seg.pt        # Modelo de segmentação
+│
+├── carparts/            # Dataset para treinamento
 │
 ├── README.md            # Este arquivo (guia completo)
 └── .gitignore           # Arquivos ignorados pelo Git
@@ -171,6 +171,11 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 Depois tente ativar novamente.
+
+**OU use uma das alternativas:**
+1. **Script Batch:** `treinar.bat` (duplo clique)
+2. **Python direto:** `.\venv\Scripts\python.exe treinar_carparts.py`
+3. **Prompt de Comando (cmd):** `venv\Scripts\activate.bat` (não PowerShell)
 
 ### Erro: "Não foi possível abrir a câmera"
 
@@ -230,10 +235,32 @@ Depois tente ativar novamente.
 
 ## 🎓 Treinar Modelo Personalizado
 
-**Resumo rápido:**
-1. Execute `python preparar_dataset.py` para organizar
-2. Execute `python treinar.py` para treinar
-3. Use `python usar_modelo_treinado.py` para testar
+**Para treinar com o dataset carparts:**
+
+**Opção 1: Script Batch (Mais Fácil)**
+```bash
+treinar.bat
+```
+
+**Opção 2: Python Direto**
+```bash
+.\venv\Scripts\python.exe treinar_carparts.py
+```
+
+**Opção 3: Se der erro de política PowerShell**
+```bash
+# No Prompt de Comando (cmd), não PowerShell:
+venv\Scripts\activate.bat
+python treinar_carparts.py
+```
+
+**Acompanhar progresso:**
+```bash
+.\venv\Scripts\python.exe verificar_treinamento.py
+```
+
+**Tempo estimado:** 6-12 horas (CPU)
+**Modelo final:** `runs/detect/car_parts_treinado/weights/best.pt`
 
 ---
 

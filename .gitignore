@@ -20,6 +20,18 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Modelos grandes (opcional - descomente se não quiser versionar)
-# *.pt
+# Modelos pré-treinados (muito grandes, podem ser baixados)
+yolo11n.pt
+yolo11n-pose.pt
+yolo11n-seg.pt
+
+# Resultados de treinamento (exceto o modelo final)
+runs/detect/*/weights/last.pt
+runs/detect/*/results.csv
+runs/detect/*/args.yaml
+runs/detect/*/labels.jpg
+runs/detect/*/results.png
+runs/detect/*/confusion_matrix.png
+runs/detect/*/*.jpg
+runs/detect/*/*.png
 
